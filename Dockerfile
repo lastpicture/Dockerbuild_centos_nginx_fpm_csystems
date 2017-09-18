@@ -22,9 +22,9 @@ COPY www.conf /etc/php-fpm.d/
 COPY php-fpm.conf /etc/
 COPY opcache.ini /etc/php.d/
 COPY test.php /usr/share/nginx/html/ 
-COPY start.sh /var/
+COPY start.sh /usr/local/bin/
 
 EXPOSE 80
 
-RUN systemctl enable nginx.service
-CMD ["/usr/sbin/init"]
+
+CMD ["start.sh"]
