@@ -16,6 +16,9 @@ RUN yum -y install  php71w-fpm php71w-intl php71w-opcache php71w-common php71w-c
     php71w-gd php71w-mcrypt php71w-mysql php71w-pdo php71w-pgsql php71w-phpdbg php71w-pecl-imagick php71w-xml php71w-imap php71w-snmp
 
 COPY nginx.conf /etc/nginx/
+COPY www.conf /etc/php-fpm.d/
+COPY php-fpm.conf /etc/
+COPY opcache.ini /etc/php.d/
 
 EXPOSE 80
 
