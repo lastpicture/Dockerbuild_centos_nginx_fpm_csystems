@@ -23,7 +23,7 @@ COPY php-fpm.conf /etc/
 COPY opcache.ini /etc/php.d/
 COPY test.php /usr/share/nginx/html/ 
 COPY start.sh /usr/local/bin/
-
+RUN chmod +x /usr/local/bin/start.sh
 EXPOSE 80
 
 
