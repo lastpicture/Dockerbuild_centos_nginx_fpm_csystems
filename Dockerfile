@@ -20,7 +20,9 @@ COPY www.conf /etc/php-fpm.d/
 COPY php-fpm.conf /etc/
 COPY opcache.ini /etc/php.d/
 COPY test.php /usr/share/nginx/html/ 
+COPY start.sh /var/
 
 EXPOSE 80
 
-CMD [“php-fpm”]
+CMD ["bash","/var/start.sh"]
+
