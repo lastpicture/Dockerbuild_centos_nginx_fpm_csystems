@@ -6,6 +6,9 @@ ENV container docker
 RUN yum -y install wget tar
 RUN yum -y install epel-release
 
+RUN groupadd nginx -g 1002
+RUN useradd nginx -g 1002 -u 1002
+
 #nignx install
 RUN yum -y install nginx
 
