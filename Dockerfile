@@ -24,5 +24,4 @@ COPY start.sh /var/
 
 EXPOSE 80
 
-CMD ["bash","/var/start.sh"]
-
+CMD ["/usr/sbin/init"]
