@@ -1,12 +1,11 @@
 FROM centos:7
 
 #Tools install
-RUN yum -y install vim wget tar
-RUN yum -y groupinstall development
+RUN yum -y install wget tar
 RUN yum -y install epel-release
 
 #nignx install
-RUN yum install nignx
+#RUN yum install nignx
 
 #php setup
 RUN rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
