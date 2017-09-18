@@ -19,7 +19,7 @@ COPY nginx.conf /etc/nginx/
 COPY www.conf /etc/php-fpm.d/
 COPY php-fpm.conf /etc/
 COPY opcache.ini /etc/php.d/
-COPY test.php /usr/shared/www/html/ 
+COPY test.php /usr/share/nginx/html/ 
 
 EXPOSE 80
 
