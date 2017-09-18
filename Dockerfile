@@ -18,3 +18,5 @@ RUN yum -y install  php71w-fpm php71w-intl php71w-opcache php71w-common php71w-c
 COPY nginx.conf /etc/nginx/
 
 EXPOSE 80
+
+CMD [“php-fpm”]
