@@ -18,7 +18,7 @@ RUN rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
 
 
 RUN yum -y install  php71w-fpm php71w-intl php71w-opcache php71w-common php71w-cli php71w-bcmath \
-    php71w-gd php71w-mcrypt php71w-mysql php71w-pdo php71w-pgsql php71w-phpdbg php71w-pecl-imagick php71w-xml php71w-imap php71w-snmp
+    php71w-gd php71w-mcrypt php71w-mysql php71w-pdo php71w-pgsql php71w-phpdbg php71w-pecl-imagick php71w-xml php71w-imap php71w-snmp php71-php-mbstring
 
 COPY nginx.conf /etc/nginx/
 COPY www.conf /etc/php-fpm.d/
