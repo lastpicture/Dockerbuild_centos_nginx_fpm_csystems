@@ -23,6 +23,7 @@ COPY www.conf /etc/php-fpm.d/
 COPY php-fpm.conf /etc/
 COPY opcache.ini /etc/php.d/
 COPY test.php /usr/share/nginx/html/
+COPY .bashrc /root/.bashrc
 RUN yum -y install composer --skip-broken
 RUN yum -y update
 COPY start.sh /usr/local/bin/
